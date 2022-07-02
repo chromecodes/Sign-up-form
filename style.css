@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Brushield;
+  src: url(font/BrushieldItalic-n8PM.ttf);
+}
 .main {
   display: flex;
 }
@@ -7,7 +11,6 @@
   background-image: url(image/splash.jpg);
   background-size: 102% 100%;
 }
-
 .right {
   height: 100vh;
   width: 65%;
@@ -16,7 +19,39 @@
 .sider {
   position: relative;
   top: 20%;
-  background-color: aliceblue;
+  background: rgba(240, 248, 255, 0.8);
   height: 10rem;
-  opacity: 0.8;
+  display: flex;
+}
+.logo {
+  margin-left: 6%;
+  align-self: center;
+  width: 180px;
+  height: 145px;
+  background-image: url(image/logo.png);
+  background-size: 100% 100%;
+}
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  line-height: 3.4rem;
+}
+.title-top {
+  font-family: Brushield;
+  color: #1ab0d1;
+  font-size: 5rem;
+}
+.title-down {
+  font-family: Brushield;
+  color: #0068b6;
+  font-size: 5rem;
+}
+.right-wrapper {
+  padding: 25px;
+}
+.info {
+  font-family: "Zhi Mang Xing", cursive;
+  color: aliceblue;
+  font-size: 3rem;
 }
