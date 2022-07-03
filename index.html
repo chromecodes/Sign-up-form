@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zhi+Mang+Xing&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Sign-Up-Form</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Sign-Up-Form</title>
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -31,8 +34,8 @@
         <div class="right">
             <div class="right-wrapper">
                 <div class="info">
-                    This is not a real online service! You know you need something like this in your life to help you
-                    realize your deepest dreams. Sign up now to get started.
+                    This is not a real online service! <br> 
+                    If you dosen't talent for doing stuff. You can always use hard work as a replacement. You know you need something like this in your life to help you realize your deepest dreams.
                     You know you want to.
                 </div>
 
@@ -42,34 +45,42 @@
                         <div class="form">
                             <div class="se1">
                                 <label for="fname">- FIRST NAME <br>
-                                    <input type="text" id="fname" name="first name">
+                                    <input type="text" id="fname" name="first name" required>
                                 </label>
                                 <label for="lname">- LAST NAME <br>
-                                    <input type="text" id="lname" name="last name">
+                                    <input type="text" id="lname" name="last name" required>
                                 </label>
                             </div>
                             <div class="se2">
                                 <label for="email">- EMAIL <br>
-                                    <input type="email" id="email" name="email">
+                                    <input type="email" id="email" name="email" required >
+                                    <div id="errormail" class="error"> </div>
                                 </label>
-                                <label for="number">- PHONE NUMBER <br>
-                                    <input type="tel" id="number" name="phone number">
+                                <label for="pnumber">- PHONE NUMBER <br>
+                                    <input type="tel" id="pnumber" name="phone number" pattern='[0-9]{10}'
+                                        maxlength="10" required>
+                                    <div id="errornum" class="error"> </div>
                                 </label>
                             </div>
                             <div class="se3">
                                 <label for="password">- PASSWORD <br>
-                                    <input type="password" id="password" name="password">
+                                    <input type="password" id="password" name="password"  pattern='(?=.*[a-z])(?=.*[A-Z]).{8,}' required >
+                                    <div id="error1" class="error"></div>
                                 </label>
+
                                 <label for="cpassword">- CONFIRM PASSWORD <br>
-                                    <input type="password" id="cpassword" name="confirm password">
+                                    <input type="password" id="cpassword" name="confirm password" pattern='(?=.*[a-z])(?=.*[A-Z]).{8,}'  required >
+                                    <div id="error2" class="error"></div>
                                 </label>
+
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="join"> Join </button>
+                    <button class="join"> Create Account </button>
                 </form>
                 <div class="log">
-
+                    Already have an account?
+                    <a href="index.html"><button class="login"> Log in </button></a>
                 </div>
             </div>
 

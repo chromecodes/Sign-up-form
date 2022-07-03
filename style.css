@@ -51,12 +51,12 @@
 .info {
   font-family: "Zhi Mang Xing", cursive;
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 25px 25px 0;
 }
 
 .content {
-  height: 280px;
+  height: 310px;
   margin-top: 20px;
   background-color: #0068b6;
   padding: 0 25px;
@@ -75,7 +75,7 @@
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 .se1 {
   display: flex;
@@ -108,12 +108,51 @@ label {
 input:focus {
   outline: none;
   margin-bottom: 0rem;
-  position: relative;
   height: 1.6rem;
   border: 1px solid aliceblue;
 }
+input:focus:invalid {
+  border: 1px solid orangered;
+}
+input:focus:valid {
+  border: 1px solid greenyellow;
+}
+.error {
+  font-size: 0.75rem;
+  color: red;
+  position: absolute;
+}
 .join {
-  margin: 16px 32px;
+  margin: 24px 32px 0;
   width: 200px;
   height: 50px;
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: "Zhi Mang Xing", cursive;
+  background-color: #1ab0d1;
+  border: 2px solid aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.join:hover {
+  background-color: aliceblue;
+  color: #1ab0d1;
+  border: 2px solid #1ab0d1;
+}
+.log {
+  margin: 16px 32px;
+  font-size: 2rem;
+  font-family: "Zhi Mang Xing", cursive;
+  color: aliceblue;
+  letter-spacing: 1px;
+}
+.login {
+  background-color: transparent;
+  color: #1ab0d1;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.login:hover {
+  opacity: 1;
 }
