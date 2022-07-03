@@ -47,25 +47,37 @@
   color: #0068b6;
   font-size: 5rem;
 }
-.right-wrapper {
-  padding: 25px;
-}
+
 .info {
   font-family: "Zhi Mang Xing", cursive;
   color: aliceblue;
   font-size: 2rem;
+  padding: 25px 25px 0;
 }
+
+.content {
+  height: 280px;
+  margin-top: 20px;
+  background-color: #0068b6;
+  padding: 0 25px;
+}
+
+.form-info {
+  font-family: "Zhi Mang Xing", cursive;
+  color: aliceblue;
+  font-size: 2rem;
+  padding: 12px 0 24px;
+}
+
 .form {
   font-family: "Poppins", sans-serif;
   color: aliceblue;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  height: 170px;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 .se1 {
-  justify-content: flex-start;
   display: flex;
   gap: 75px;
 }
@@ -74,13 +86,13 @@
   gap: 75px;
 }
 .se3 {
-  justify-content: flex-end;
   display: flex;
   gap: 75px;
 }
 input {
   width: 250px;
   height: 1.4rem;
+  margin-bottom: 0.2rem;
   padding: 0.16rem 0.25rem 0;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -95,7 +107,13 @@ label {
 }
 input:focus {
   outline: none;
+  margin-bottom: 0rem;
   position: relative;
-  height: 1.5rem;
+  height: 1.6rem;
   border: 1px solid aliceblue;
+}
+.join {
+  margin: 16px 32px;
+  width: 200px;
+  height: 50px;
 }
