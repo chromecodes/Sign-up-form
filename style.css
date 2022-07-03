@@ -56,18 +56,46 @@
   font-size: 2rem;
 }
 .form {
-  font-family: "Zhi Mang Xing", cursive;
+  font-family: "Poppins", sans-serif;
   color: aliceblue;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
+  height: 170px;
+  flex-wrap: wrap;
 }
 .se1 {
+  justify-content: flex-start;
   display: flex;
+  gap: 75px;
 }
 .se2 {
   display: flex;
+  gap: 75px;
 }
 .se3 {
+  justify-content: flex-end;
   display: flex;
+  gap: 75px;
+}
+input {
+  width: 250px;
+  height: 1.4rem;
+  padding: 0.16rem 0.25rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+  letter-spacing: 1px;
+  background: transparent;
+  border-radius: 2px;
+  border: 1px solid rgba(240, 248, 255, 0.3);
+}
+label {
+  position: relative;
+}
+input:focus {
+  outline: none;
+  position: relative;
+  height: 1.5rem;
+  border: 1px solid aliceblue;
 }
